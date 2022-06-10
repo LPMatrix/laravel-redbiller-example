@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abc7822bd9f28e9a62986817bf04f76",
+    "content-hash": "973c37dfe1451d0b79b09fc6c8bb1cbe",
     "packages": [
         {
             "name": "brick/math",
@@ -1597,6 +1597,71 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "lpmatrix/laravel-redbiller",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/Users/mubaraq/Documents/Laravel/laravel-redbiller",
+                "reference": "eebcdca012787f4854b94bf5bddd33b5e6c2ce50"
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LPMatrix\\Redbiller\\RedbillerServiceProvider"
+                    ],
+                    "aliases": {
+                        "Redbiller": "LPMatrix\\Redbiller\\Facades\\Redbiller"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LPMatrix\\Redbiller\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LPMatrix\\Redbiller\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sanusi Mubaraq",
+                    "email": "mubaraqsanusi908@gmail.com"
+                }
+            ],
+            "description": "A laravel package for Redbiller",
+            "homepage": "https://github.com/LPMatrix/laravel-redbiller",
+            "keywords": [
+                ":LPMatrix",
+                ":laravel-redbiller"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "monolog/monolog",
@@ -7760,12 +7825,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lpmatrix/laravel-redbiller": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }

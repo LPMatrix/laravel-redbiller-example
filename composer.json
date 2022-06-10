@@ -9,7 +9,8 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "lpmatrix/laravel-redbiller": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -56,6 +57,13 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "repositories": [{
+       "type": "path",
+       "url": "/Users/mubaraq/Documents/Laravel/laravel-redbiller",
+       "options": {
+        "symlink": true
+       }
+    }],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
