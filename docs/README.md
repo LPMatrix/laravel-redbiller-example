@@ -212,20 +212,48 @@ See all payments you've received; filter by reference, and more.
 
 ## POINT OF SALE
 ### Create order
+Purchase POS devices for your customers and have them delivered anywhere in Nigeria.
+> For multiple delivery addresses, create multiple objects in the order.
+
 ### Callback response
+You'll need to setup a POS callback URL on your account.
+> Send a POST request to this endpoint to get a sample response; query your database for the user ID using the terminal_id returned and credit their wallet with either the amount or settlement returned. No real money is involved in this transaction.
+
 ### Get order status
+Confirm the delivery status of your order.
+
 ### Get POS types
+Get the different POS device types available for sale. Use the type_id upon purchase.
+
 ### Get POS devices
+See all POS devices; filter by type ID, terminal ID, and more.
+
 ### Get payments
+See all payments; filter by type ID, terminal ID, and more.
+
 ### Update POS
+Set up a name and phone number of your POS devices to conveniently top-up your device via the API.
+
 ### Verify payment
+Confirm the status of the payment before giving value to your customers.
 
 ## CARDLESS WITHDRAWAL
 ### Create Paycode
+Withdraw money from supported ATMs and POSs without the use of physical ATM cards.
+> Your customer will be required to use the code returned upon creation and the four digit PIN they set to authorize the transaction.
+
 ### Get supported banks
+See all supported banks.
+
 ### Get Paycodes
+See all Paycodes you've created; filter by status, type, and more.
+
 ### Verify Paycode status
+Find out if a Paycode has been cashed-out.
+
 ### Cancel Paycode
+This action is irreversible.
+> Please note that Paycodes can only be cancelled when expired.
 
 ## MOBILE AIRTIME
 ### Purchase airtime
