@@ -257,10 +257,19 @@ This action is irreversible.
 
 ## MOBILE AIRTIME
 ### Purchase airtime
+Send airtime to your customers in their preferred mobile network.
+
 ### Retry purchase
+Retry a Cancelled transaction.
+
 ### Verify purchase
+Confirm the status of a transaction.
+
 ### Get purchases
+Get all transactions; filter by status, phone number and more.
+
 ### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
 
 ## MOBILE AIRTIME PIN GENERATION
 ### Purchase airtime PIN
