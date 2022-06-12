@@ -117,7 +117,7 @@ We strongly advice that you pass the real names of your customers gotten from th
 
 ### Callback response
 You'll need to setup a PSA callback URL on your account.
-> Send a POST request to this endpoint to get a sample response; query your database for the user ID using the sub_account.reference returned and credit their wallet with either the amount or settlement returned. No real money is involved in this transaction.
+> Send a ### request to this endpoint to get a sample response; query your database for the user ID using the sub_account.reference returned and credit their wallet with either the amount or settlement returned. No real money is involved in this transaction.
 ```php
 ```
 
@@ -228,44 +228,99 @@ See all payments you've received; filter by reference, and more.
 ### Cancel Paycode
 
 ## MOBILE AIRTIME
-
-Coming soon
+### Purchase airtime
+### Retry purchase
+### Verify purchase
+### Get purchases
+### Get retried trail
 
 ## MOBILE AIRTIME PIN GENERATION
+### Purchase airtime PIN
+### Retry purchase
+### Verify purchase
+### Check status
+### Get purchases
+### Get retried trail
 
-Coming soon
 
 ## MOBILE DATA
-
-Coming soon
+### Purchase plan
+### Retry purchase
+### Get plans
+### Verify purchase
+### Get purchases
+### Get retried trail
 
 ## WIFI INTERNET
-
-Coming soon
+### Purchase plan
+### Retry purchase
+### Get plans
+### Verify device number
+### Verify purchase
+### Get purchases
+### Get retried trail
 
 ## CABLE TV
-
-Coming soon
+### Purchase plan
+### Retry purchase
+### Get plans
+### Verify smartcard number
+### Verify purchase
+### Get purchases
+### Get retried trail
 
 ## ELECTRICITY
-
-Coming soon
+### Purchase token
+### Retry purchase
+### Verify meter number
+### Verify purchase
+### Get purchases
+### Get retried trail
 
 ## BETTING
-
-Coming soon
+### Credit account
+### Retry transaction
+### Get providers
+### Verify account
+### Verify transaction
+### Get transactions
+### Get retried trail
 
 ## KNOW YOUR CUSTOMER
-
-Coming soon
+### BVN lookup
+### Verify BVN 1.0
+### Verify BVN 2.0
+### Verify BVN 3.0
+### Verify bank account
+### Bank account lookup
+### Find bank account
+### Verify phone number 1.0
+### Verify phone number 2.0
+### Verify phone number 3.0
+### Verify driver's license
+### Verify National ID
+### Verify Voter's Card
+### Verify International Passport
+### Verify company registration
+### Verify Tax ID
+### Get bank account tier
+### Validate bank account tier
 
 ## BANK SETTLEMENT
-
-Coming soon
+### Request settlement
+### Retry request
+### Get accounts
+### Get settlements
+### Verify settlement
 
 ## ONE-TIME PASSWORD
-
-Coming soon
+### Create OTP
+### Verify OTP
+### Cancel OTP
+### Get OTPs
 
 ## MISCELLANEOUS
-
+### Get bank list
+### Get balance
+### Get coupon codes
+### Verify coupon code
