@@ -49,28 +49,66 @@ composer test
 
 # Functionalities
 
-> BANK TRANSFER
-## initiateTransaction
+## BANK TRANSFER
+### Initiate Transaction
+Send money to any Nigerian bank account.
 ```php
 ```
-## retryTransaction
+### Retry Transaction
+Retry a Cancelled transaction.
+> Please note that for your safety, transactions can only be retried once within 24 hours of initiation of which its status will then be updated to Retried to prevent you from retrying them again.
 ```php
 ```
-## suggestBanks
+### Suggest Banks
+This resource suggests banks for the recipients' bank account number where they're likely to have an account.
 ```php
 ```
-## getTransactions
+### Get Transactions
+See all transfers you've done; filter by status, bank code, and more.
 ```php
 ```
-## getRetriedTrail
+### Get Retried Trail
+See all instances a cancelled (failed and reversed) transaction was retried.
 ```php
 ```
-## verifyTransaction
+### Verify Transaction
+Confirm the status of the transaction before giving value to your customers.
 ```php
 ```
 
+### Add to Watchlist
+Add customers who are under surveillance to Watchlist to control the amount of money that they can withdraw to their bank accounts.
+> Kindly save the reference returned in the response on the customer's profile, as it would be used to carry out other activities on the profile.
+```php
+```
 
-> PAYMENT SUB-ACCOUNT
+### List Watchlist
+See all customers you've added to Watchlist; filter by reference, and more.
+```php
+```
+
+### Initiate Watchlist Transaction
+Send money to customers on Watchlist.
+> We recommend that you only use this API if your customers has already been Watchlisted.
+```php
+```
+
+### List Watchlist Transaction
+See all transfers you've done; filter by status, bank code, and more.
+```php
+```
+
+### Update Watchlist Transaction
+Update Watchlist to control the amount of money that your customers can withdraw to their bank accounts.
+```php
+```
+
+### Remove from Watchlist
+Customers who are removed will no longer be controlled by Watchlist.
+```php
+```
+
+## PAYMENT SUB-ACCOUNT
 
 Coming soon
 
@@ -78,67 +116,67 @@ Coming soon
 
 Coming soon
 
-> USSD PAYMENTS
-## createUSSDCode
+## USSD PAYMENTS
+### createUSSDCode
 ```php
 ```
-## supportedUSSDBanks
+### supportedUSSDBanks
 ```php
 ```
-## verifyUSSDTransaction
+### verifyUSSDTransaction
 ```php
 ```
-## getUSSDTransactions
+### getUSSDTransactions
 ```php
 ```
 
-> POINT OF SALE
+## POINT OF SALE
 
 Coming soon
 
-> CARDLESS WITHDRAWAL
+## CARDLESS WITHDRAWAL
 
 Coming soon
 
-> MOBILE AIRTIME
+## MOBILE AIRTIME
 
 Coming soon
 
-> MOBILE AIRTIME PIN GENERATION
+## MOBILE AIRTIME PIN GENERATION
 
 Coming soon
 
-> MOBILE DATA
+## MOBILE DATA
 
 Coming soon
 
-> WIFI INTERNET
+## WIFI INTERNET
 
 Coming soon
 
-> CABLE TV
+## CABLE TV
 
 Coming soon
 
-> ELECTRICITY
+## ELECTRICITY
 
 Coming soon
 
-> BETTING
+## BETTING
 
 Coming soon
 
-> KNOW YOUR CUSTOMER
+## KNOW YOUR CUSTOMER
 
 Coming soon
 
-> BANK SETTLEMENT
+## BANK SETTLEMENT
 
 Coming soon
 
-> ONE-TIME PASSWORD
+## ONE-TIME PASSWORD
 
 Coming soon
 
-> MISCELLANEOUS
+## MISCELLANEOUS
 
