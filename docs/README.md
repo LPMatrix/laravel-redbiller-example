@@ -179,31 +179,53 @@ This feature helps you whitelist a once-blacklisted PSA.
 ```php
 ```
 
-> ONE-TIME PAYMENT SUB-ACCOUNT
+## ONE-TIME PAYMENT SUB-ACCOUNT
+We strongly advice that you pass the real names of your customers gotten from the BVN verification endpoint.
+### Create account
 
-Coming soon
+```php
+```
+### Verify payment
+```php
+```
+### Get payments
+See all payments you've received; filter by reference, account number, and more.
+```php
+```
 
 ## USSD PAYMENTS
-### createUSSDCode
+### Create USSD Code
+We strongly advice that you pass the real names of your customers gotten from the BVN verification endpoint.
 ```php
 ```
-### supportedUSSDBanks
+### Supported USSD Banks
+Get all supported banks.
 ```php
 ```
-### verifyUSSDTransaction
+### Verify USSD Transaction
 ```php
 ```
-### getUSSDTransactions
+### Get USSD Transactions
+See all payments you've received; filter by reference, and more.
 ```php
 ```
 
 ## POINT OF SALE
-
-Coming soon
+### Create order
+### Callback response
+### Get order status
+### Get POS types
+### Get POS devices
+### Get payments
+### Update POS
+### Verify payment
 
 ## CARDLESS WITHDRAWAL
-
-Coming soon
+### Create Paycode
+### Get supported banks
+### Get Paycodes
+### Verify Paycode status
+### Cancel Paycode
 
 ## MOBILE AIRTIME
 
