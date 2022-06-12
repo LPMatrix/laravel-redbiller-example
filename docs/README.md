@@ -109,8 +109,75 @@ Customers who are removed will no longer be controlled by Watchlist.
 ```
 
 ## PAYMENT SUB-ACCOUNT
+### Create account
+We strongly advice that you pass the real names of your customers gotten from the BVN verification endpoint.
+> You'll need to install the sub-account on your account corresponding to the Payment Sub-Account you wish to create.
+```php
+```
 
-Coming soon
+### Callback response
+You'll need to setup a PSA callback URL on your account.
+> Send a POST request to this endpoint to get a sample response; query your database for the user ID using the sub_account.reference returned and credit their wallet with either the amount or settlement returned. No real money is involved in this transaction.
+```php
+```
+
+### Get accounts
+See all accounts; filter by reference, account number, and more.
+```php
+```
+
+### Get balance
+See all balances in an account.
+```php
+```
+
+### Get payments
+See all payments you've received; filter by reference, account number, and more.
+```php
+```
+
+### Get statement
+See all credits and debits on a sub-account; filter by type, page, and more.
+```php
+```
+
+### Request debit
+Withdraw funds from your customers' sub-accounts.
+> Please call the resolve debit endpoint whenever a debit request pends.
+```php
+```
+
+### Verify payment
+We strongly recommend that you verify payments before giving value to your customers.
+```php
+```
+
+### Resolve payment
+Resolve a pending payment.
+```php
+```
+### Enable auto settlement
+When enabled, payments are instantly settled to your account when your customers pay you.
+> This feature is only available to Kuda PSAs
+```php
+```
+
+### Disable auto settlement
+When disabled, you'll need to call Request debit endpoint to get settled in part or in whole
+> This feature is only available to Kuda PSAs
+```php
+```
+
+### Blacklist account
+This feature protects you from fraudulent customers.
+> Payments made into blacklisted accounts will be indicated as "blacklisted": "true" in the responses. Please, do not give value until you have verified the legitimacy of the transactions.
+```php
+```
+
+### Whitelist account
+This feature helps you whitelist a once-blacklisted PSA.
+```php
+```
 
 > ONE-TIME PAYMENT SUB-ACCOUNT
 
