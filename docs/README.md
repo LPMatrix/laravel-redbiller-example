@@ -214,88 +214,198 @@ See all payments you've received; filter by reference, and more.
 ### Create order
 Purchase POS devices for your customers and have them delivered anywhere in Nigeria.
 > For multiple delivery addresses, create multiple objects in the order.
+```php
+```
 
 ### Callback response
 You'll need to setup a POS callback URL on your account.
 > Send a POST request to this endpoint to get a sample response; query your database for the user ID using the terminal_id returned and credit their wallet with either the amount or settlement returned. No real money is involved in this transaction.
+```php
+```
 
 ### Get order status
 Confirm the delivery status of your order.
+```php
+```
 
 ### Get POS types
 Get the different POS device types available for sale. Use the type_id upon purchase.
+```php
+```
 
 ### Get POS devices
 See all POS devices; filter by type ID, terminal ID, and more.
+```php
+```
 
 ### Get payments
 See all payments; filter by type ID, terminal ID, and more.
+```php
+```
 
 ### Update POS
 Set up a name and phone number of your POS devices to conveniently top-up your device via the API.
+```php
+```
 
 ### Verify payment
 Confirm the status of the payment before giving value to your customers.
+```php
+```
 
 ## CARDLESS WITHDRAWAL
 ### Create Paycode
 Withdraw money from supported ATMs and POSs without the use of physical ATM cards.
 > Your customer will be required to use the code returned upon creation and the four digit PIN they set to authorize the transaction.
+```php
+```
 
 ### Get supported banks
 See all supported banks.
+```php
+```
 
 ### Get Paycodes
 See all Paycodes you've created; filter by status, type, and more.
+```php
+```
 
 ### Verify Paycode status
 Find out if a Paycode has been cashed-out.
+```php
+```
 
 ### Cancel Paycode
 This action is irreversible.
 > Please note that Paycodes can only be cancelled when expired.
+```php
+```
 
 ## MOBILE AIRTIME
 ### Purchase airtime
 Send airtime to your customers in their preferred mobile network.
+```php
+```
 
 ### Retry purchase
 Retry a Cancelled transaction.
+```php
+```
 
 ### Verify purchase
 Confirm the status of a transaction.
+```php
+```
 
 ### Get purchases
 Get all transactions; filter by status, phone number and more.
+```php
+```
 
 ### Get retried trail
 See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## MOBILE AIRTIME PIN GENERATION
 ### Purchase airtime PIN
-### Retry purchase
-### Verify purchase
-### Check status
-### Get purchases
-### Get retried trail
+Purchase airtime PINs in your customers' preferred mobile networks.
+> Use the corresponding network to load a PIN.
+```php
+```
 
+### Retry purchase
+Retry a Cancelled transaction.
+> Please note that for your safety, transactions can only be retried once within 24 hours of initiation of which its status will then be updated to Retried to prevent you from retrying them again.
+```php
+```
+
+### Verify purchase
+Confirm the status of a transaction.
+```php
+```
+
+### Check status
+Find out if a PIN has been used.
+```php
+```
+
+### Get purchases
+Get all transactions; filter by status, phone number and more.
+```php
+```
+
+### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## MOBILE DATA
 ### Purchase plan
+Send data to your customers in their preferred mobile network.
+```php
+```
+
 ### Retry purchase
+Retry a Cancelled transaction.
+```php
+```
+
 ### Get plans
+See data plans for available mobile networks.
+```php
+```
+
 ### Verify purchase
+Verify the status of a transaction.
+```php
+```
+
 ### Get purchases
+Get all transactions; filter by status, phone number and more.
+```php
+```
+
 ### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## WIFI INTERNET
 ### Purchase plan
+Send data to your customers in their preferred Internet network.
+```php
+```
+
 ### Retry purchase
+Retry a Cancelled transaction.
+```php
+```
+
 ### Get plans
+See Internet plans for available networks.
+```php
+```
+
 ### Verify device number
+Verify your customers' device number before transacting.
+```php
+```
+
 ### Verify purchase
+Verify the status of a transaction.
+```php
+```
+
 ### Get purchases
+Get all transactions; filter by status, device number and more.
+```php
+```
+
 ### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## CABLE TV
 ### Purchase plan
