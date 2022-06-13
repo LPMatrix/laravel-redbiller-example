@@ -623,35 +623,43 @@ Confirm the status of the settlement.
 
 ## ONE-TIME PASSWORD
 ### Create OTP
+Send customized One-Time Passwords to your customers with our secure DND channel.
 ```php
 ```
 
 ### Verify OTP
+Confirm the validity of an OTP before processing your customers' requests.
 ```php
 ```
 
 ### Cancel OTP
+This action is irreversible and verification will fail.
 ```php
 ```
 
 ### Get OTPs
+See all OTPs you've created; filter by phone_no, reference, and more.
 ```php
 ```
 
 
 ## MISCELLANEOUS
 ### Get bank list
+Get all supported banks in different categories. E.g, commercial banks.
 ```php
 ```
 
 ### Get balance
+Know when you're running low on funds and fund your account via any of your sub-accounts.
 ```php
 ```
 
 ### Get coupon codes
+See all coupon codes and their respective supported services enabled on your account.
 ```php
 ```
 
 ### Verify coupon code
+See the services supported by a coupon code.
 ```php
 ```
