@@ -506,39 +506,147 @@ See all instances a cancelled (failed and reversed) transaction was retried.
 
 ## KNOW YOUR CUSTOMER
 ### BVN lookup
+Get the BVN of your customers with just their account number and bank code.
+```php
+```
+
 ### Verify BVN 1.0
+This resource returns the customers' basic details.
+```php
+```
+
 ### Verify BVN 2.0
+This resource returns more information about the customer, including their photo.
+```php
+```
+
 ### Verify BVN 3.0
+This resource returns more information about the customer, including their photo.
+```php
+```
+
 ### Verify bank account
+Verify the recipient bank account number before initiating a bank transfer.
+```php
+```
+
 ### Bank account lookup
+Get important information of your customers with just their account number and bank code.
+```php
+```
+
 ### Find bank account
+This resource finds and returns your customers' account name, bank code, and more where they have an account.
+```php
+```
+
 ### Verify phone number 1.0
+Get the full name and date of birth of your customers.
+```php
+```
+
 ### Verify phone number 2.0
+Get the full name and date of birth of your customers.
+```php
+```
+
 ### Verify phone number 3.0
+Get the full name, BVN, and date of birth of your customers.
+```php
+```
+
 ### Verify driver's license
+Confirm the Driver's License of your customers and know more about them, such as their gender, date of birth, and more.
+```php
+```
+
 ### Verify National ID
+Confirm that your customers are Nigerians through their National Identification Number and know more about them, such as their gender, date of birth, and more.
+```php
+```
+
 ### Verify Voter's Card
+Confirm the identity of your customers though their Voter's Card.
+```php
+```
+
 ### Verify International Passport
+Confirm the identity of your customers though their International Passport.
+```php
+```
+
 ### Verify company registration
+Confirm your customers' company registration and know more about them, such as their date of incorporation and more.
+```php
+```
+
 ### Verify Tax ID
+Confirm your customers' company Tax Identification Number.
+```php
+```
+
 ### Get bank account tier
+Get tier of a bank account.
+```php
+```
+
 ### Validate bank account tier
+Validate the bank account tier before initiating a bank transfer.
+```php
+```
 
 ## BANK SETTLEMENT
 ### Request settlement
+```php
+```
+
 ### Retry request
+```php
+```
+
 ### Get accounts
+```php
+```
+
 ### Get settlements
+```php
+```
+
 ### Verify settlement
+```php
+```
 
 ## ONE-TIME PASSWORD
 ### Create OTP
+```php
+```
+
 ### Verify OTP
+```php
+```
+
 ### Cancel OTP
+```php
+```
+
 ### Get OTPs
+```php
+```
+
 
 ## MISCELLANEOUS
 ### Get bank list
+```php
+```
+
 ### Get balance
+```php
+```
+
 ### Get coupon codes
+```php
+```
+
 ### Verify coupon code
+```php
+```
