@@ -409,20 +409,64 @@ See all instances a cancelled (failed and reversed) transaction was retried.
 
 ## CABLE TV
 ### Purchase plan
+Subscribe your customers' preferred cable network.
+
 ### Retry purchase
+Retry a Cancelled transaction.
+```php
+```
+
 ### Get plans
 ### Verify smartcard number
+Verify your customers' smart card number before transacting.
+```php
+```
+
 ### Verify purchase
+Verify the status of a transaction.
+```php
+```
+
 ### Get purchases
+Get all transactions; filter by status, device number and more.
+```php
+```
+
 ### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## ELECTRICITY
 ### Purchase token
+Purchase tokens for your customers from their preferred electricity biller.
+```php
+```
+
 ### Retry purchase
+Retry a Cancelled transaction.
+```php
+```
+
 ### Verify meter number
+Verify your customers' meter number before transacting.
+```php
+```
+
 ### Verify purchase
+Verify the status of a transaction.
+```php
+```
+
 ### Get purchases
+Get all transactions; filter by status, device number and more.
+```php
+```
+
 ### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## BETTING
 ### Credit account
