@@ -470,12 +470,39 @@ See all instances a cancelled (failed and reversed) transaction was retried.
 
 ## BETTING
 ### Credit account
+Fund betting accounts of your customers from different providers.
+```php
+```
+
 ### Retry transaction
+Retry a Cancelled transaction.
+```php
+```
+
 ### Get providers
+Get all supported betting providers.
+```php
+```
+
 ### Verify account
+Verify the identity of a betting account.
+```php
+```
+
 ### Verify transaction
+Confirm the status of a transaction.
+```php
+```
+
 ### Get transactions
+Get all transactions; filter by status, customer ID and more.
+```php
+```
+
 ### Get retried trail
+See all instances a cancelled (failed and reversed) transaction was retried.
+```php
+```
 
 ## KNOW YOUR CUSTOMER
 ### BVN lookup
