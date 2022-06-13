@@ -597,22 +597,27 @@ Validate the bank account tier before initiating a bank transfer.
 
 ## BANK SETTLEMENT
 ### Request settlement
+Send money to your settlement bank account.
 ```php
 ```
 
 ### Retry request
+Retry a Cancelled transaction.
 ```php
 ```
 
 ### Get accounts
+Transfer money to this bank account to fund your account.
 ```php
 ```
 
 ### Get settlements
+See all settlement you've done; filter by status, account_id, and more.
 ```php
 ```
 
 ### Verify settlement
+Confirm the status of the settlement.
 ```php
 ```
 
